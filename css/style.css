@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image__text a {
+    background-color: #bbb0a038;
+    border: 2px solid #bbb0a0da;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+}
+
+.intro-image__text a:hover{
+    transform: scale(1.2);
+}
+
+.intro-image__text {
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    animation-name: moveInLeft; 
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+}
+
+80% {
+    transform: translateX(50px);
+}
+
+100% {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+}
+
+.intro-text {
+    background-color: #e8d9c6;
+    color: #453d32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    padding: 0 15rem;
+    
+}
+
+.intro-text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.packaging-image {
+    background-attachment: fixed;
+    background-image: url("../img/img2.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(53% 20%, 100% 39%, 100% 39%, 100% 76%, 100% 100%, 32% 100%, 0 100%, 0 43%, 0 0);
+}
+
+.packaging-image__link a {
+    background-color: #6d655938;
+    border: 2px solid #bbb0a01f;
+    color: #f1ece4;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+}
+
+.packaging-image__link a:hover {
+    transform: scale(1.2);
+}
+
+
+.packaging-text {
+    background-color: #e8d9c6;
+    color: #453d32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    padding: 0 15rem;
+}
+
+.packaging-text_textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+.packaging-image__text {
+    background-color: #bbb0a038;
+    border: 2px solid #bbb0a0da;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+    animation-name: moveInRight; 
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight {
+0% {
+    transform: translateX(1000px);
+    opacity: 0;
+}
+
+80% {
+    transform: translateX(-50px);
+}
+
+100% {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+}
+
+.footer {
+    height: 250px;
+    background-color: #dfb688 ;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem; 
+}
+
+.footer ul li a{
+    color: #191919;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #e2cfcf;
+
+}
+
+.tutorials-image {
+    background-attachment: fixed;
+    background-image: url("../img/img3.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorials-image__link a {
+    background-color: #6d655938;
+    border: 2px solid #bbb0a01f;
+    color: #f1ece4;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+}
+
+.tutorials-image__link a:hover {
+    transform: scale(1.2);
+}
+
+.tutorials-text {
+    background-color: #88a9b2;
+    color: #453d32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    padding: 0 15rem;
+}
+
+
+.tutorials-image__text {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 0rem;
+    background-color: #bbb0a038;
+    border: 2px solid #bbb0a0da;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+    animation-name: moveInRight; 
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-name: moveInRight; 
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight {
+0% {
+    transform: translateX(1000px);
+    opacity: 0;
+}
+
+80% {
+    transform: translateX(-50px);
+}
+
+100% {
+    transform: translateX(0);
+    opacity: 1;
+}
+
